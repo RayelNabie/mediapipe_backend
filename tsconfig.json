@@ -23,6 +23,13 @@
     // Some stricter flags (disabled by default)
     "noUnusedLocals": false,
     "noUnusedParameters": false,
-    "noPropertyAccessFromIndexSignature": false
-  }
+    "noPropertyAccessFromIndexSignature": false,
+
+    // Added options
+    "baseUrl": "./src", // Of het pad naar je src folder.
+    "paths": {
+      "@/*": ["*"]
+    }
+  },
+  "include": ["src/**/*"] // Added include to specify the files to be compiled
 }
