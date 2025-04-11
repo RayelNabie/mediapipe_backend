@@ -1,0 +1,25 @@
+{
+  "name": "mediapipe_backend",
+  "module": "src/index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest",
+    "husky": "^9.1.7",
+    "prettier": "3.5.3"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "scripts": {
+    "start": "bun run src/index.ts",
+    "dev": "bun run --watch src/index.ts",
+    "prepare": "husky",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "lint": "prettier --check \"src/**/*.ts\"",
+    "build": "bun build src/index.ts --outdir dist"
+  }
+}
